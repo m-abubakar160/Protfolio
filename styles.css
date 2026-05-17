@@ -1,0 +1,71 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #000000 50%, #b873fd 70%);
+}
+.glowing-text {
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
+    animation: glow 0.5s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+    }
+}
+.project-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.progress-bar {
+    transition: width 2s ease-in-out;
+}
+.navbar {
+    transition: background-color 0.3s;
+}
+.navbar.scrolled {
+    background-color: rgba(0,0,0,0.9) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+.gradient-btn {
+    background: linear-gradient(135deg, #6f42c1, #b873fd, #00c6ff);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-weight: 500;
+    transition: 0.4s ease;
+    background-size: 200% 200%;
+    animation: gradientMove 4s ease infinite;
+}
+
+.gradient-btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px rgba(184, 115, 253, 0.8);
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
