@@ -1,5 +1,5 @@
 // Typing effect for hero
-const text = "A Unity Game & Frontend Web developer";
+const text = "A Frontend Web & Flutter App developer";
 let index = 0;
 function typeWriter() {
     if (index < text.length) {
